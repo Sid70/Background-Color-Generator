@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color generator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+            font-weight: bold;
+        }
+
+        #container {
+            background: linear-gradient(#e66465, #f6b73c);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 113%;
+            padding: 50px 0px;
+        }
+
+        body {
+            text-align: center;
+            height: 400px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .5em;
+            color: white;
+        }
+
+        #result
+        {
+            font-family:'Times New Roman', Times, serif;
+            text-transform: lowercase;
+            color: white;
+            letter-spacing: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Background Generator</h1><br>
+
+        <input type="color" id="color1" value="#e66465">
+        <input type="color" id="color2" value="#f6b73c">
+        <br><br>
+        <h3>Current background Color</h3>
+
+        <br><br>
+        <p id="result"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
